@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToWordConverter.API", "NumberToWordConverter.API\NumberToWordConverter.API.csproj", "{94C4B8BB-DF11-4CF8-81F4-F605063A2AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToWordsConverter.Helpers", "NumberToWordsConverter.Helpers\NumberToWordsConverter.Helpers.csproj", "{7F8F739E-4A2D-4EDA-949D-272C43C40637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToWordConverter.Application", "NumberToWordConverter.Application\NumberToWordConverter.Application.csproj", "{454CCB92-A6B9-4F2A-9D65-383BA85E11F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToWordConverter.Tests", "NumberToWordConverter.Tests\NumberToWordConverter.Tests.csproj", "{23F3EF42-3C25-4EEC-835A-F2A86014BD2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93BE9D4A-00A8-4DED-9E71-BFA29674E764}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94C4B8BB-DF11-4CF8-81F4-F605063A2AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C4B8BB-DF11-4CF8-81F4-F605063A2AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C4B8BB-DF11-4CF8-81F4-F605063A2AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C4B8BB-DF11-4CF8-81F4-F605063A2AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F8F739E-4A2D-4EDA-949D-272C43C40637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8F739E-4A2D-4EDA-949D-272C43C40637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8F739E-4A2D-4EDA-949D-272C43C40637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8F739E-4A2D-4EDA-949D-272C43C40637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454CCB92-A6B9-4F2A-9D65-383BA85E11F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454CCB92-A6B9-4F2A-9D65-383BA85E11F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454CCB92-A6B9-4F2A-9D65-383BA85E11F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454CCB92-A6B9-4F2A-9D65-383BA85E11F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F3EF42-3C25-4EEC-835A-F2A86014BD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F3EF42-3C25-4EEC-835A-F2A86014BD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F3EF42-3C25-4EEC-835A-F2A86014BD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F3EF42-3C25-4EEC-835A-F2A86014BD2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
