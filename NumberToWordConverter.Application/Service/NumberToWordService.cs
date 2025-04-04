@@ -54,6 +54,10 @@ namespace NumberToWordConverter.Application.Service
 			this.PlaceValues = placeValues;
 		}
 
+		/// <summary>
+		/// Converts the given number to words.
+		/// </summary>
+		/// <returns></returns>
 		public string ConvertToWords()
 		{
 			return $"{GetDollarPart()} AND {GetCentPart()}".SqueezeSpace().ToUpper();
@@ -62,7 +66,9 @@ namespace NumberToWordConverter.Application.Service
 		public string	GetDollarPart()
 		{
 			Int64 dollars = (Int64)InputNumber;
-			var dollarWord = $"{GetWords(dollars)} {(dollars == 1 ? "DOLLAR" : "DOLLARS")}";
+			Int64 absDollars = Math.Abs(dollars);
+
+			var dollarWord = $"{GetWords(Math.Abs(absDollars))} {(absDollars == 1 ? "DOLLAR" : "DOLLARS")}";
 
 			if (dollars < 0)
 				return $"Negative {dollarWord}";
@@ -73,7 +79,9 @@ namespace NumberToWordConverter.Application.Service
 		private	string GetCentPart()
 		{
 			int cents = (int)((InputNumber - (Int64)InputNumber) * 100);
-			var centWord = $"{GetWords(cents)}  {(cents == 1 ? "CENT" : "CENTS")}";
+			int absCents = Math.Abs(cents);
+
+			var centWord = $"{GetWords(absCents)}  {(absCents == 1 ? "CENT" : "CENTS")}";
 			return centWord;
 		}
 

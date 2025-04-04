@@ -28,16 +28,6 @@ namespace NumberToWordConverter.API
 			builder.Services.AddSwaggerGen();
 			builder.Services.AddExceptionHandler<NumberToWordExceptionHandler>();
 			
-			//builder.Services.AddCors(options =>
-			//{
-			//	options.AddPolicy(name: MyAllowSpecificOrigins,
-			//			policy =>
-			//			{
-			//				policy.AllowAnyOrigin()   // Allow requests from any origin (use specific origins in production)
-			//					.AllowAnyMethod()   // Allow all HTTP methods (GET, POST, etc.)
-			//					.AllowAnyHeader();  // Allow all headers
-			//			});
-			//});
 
 			var app = builder.Build();
 
