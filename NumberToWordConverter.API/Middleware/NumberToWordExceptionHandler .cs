@@ -11,12 +11,10 @@ namespace NumberToWordConverter.API.Middleware
 			var errorResponse = new ErrorResponse
 			{
 				Title = "An error occurred",
-				Message = exception.Message,
-				StatusCode = StatusCodes.Status400BadRequest
+				Message = exception.Message
 			};
 
 			await httpContext.Response.WriteAsJsonAsync(errorResponse, cancellationToken: cancellationToken);
-			httpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
 
 			return true;
 		}
@@ -24,8 +22,8 @@ namespace NumberToWordConverter.API.Middleware
 
 	public class ErrorResponse
 	{
-		public string Title { get; set; }
-		public string Message { get; set; }
-		public int StatusCode { get; set; }
+		public required string Title { get; set; }
+		
+		public required string Message { get; set; }
 	}
 }
