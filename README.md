@@ -47,11 +47,13 @@ The solution also features dependency injection, configuration via JSON, making 
 | ---- | ----------- |
 | 200 | OK |
 
+## Repo
+Git hub repo: https://github.com/govindarun/NumberToWordConverter.git
 
 ## Demo
 
-Insert gif or link to demo
-
+Visit the following URL to see the demo of the application: [NumberToWordConverter](https://agp-numbertowordconverter-guc7ara3h7eec4h8.australiaeast-01.azurewebsites.net/index.html)
+Visit the following URL to see the build pipline: [NumberToWordConverter](https://arungovind.visualstudio.com/NumberToWordConverter/)
 
 ## Installation
 
